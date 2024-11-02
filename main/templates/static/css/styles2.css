@@ -1,0 +1,138 @@
+/* General styling */
+body {
+    background-color: #fbdada;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #8b70cc;
+    display: flex;
+    justify-content:normal;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Section with the contents */
+.contents {
+    display: flex;
+    margin-top: 30px;
+    padding-left: 20px;
+    gap: 30px;
+}
+
+.conteiner {
+    background-color: #ffe4e4;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+#content {
+    background-color: #d8a8f6;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #8b70cc;
+    font-family: 'Cursive';
+}
+
+p {
+    font-family: cursive;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+/* Image section (right) */
+.image-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.image-section img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline (year selection) */
+.timeline {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #8b70cc;
+    padding: 10px 0;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.timeline span {
+    cursor: pointer;
+}
+
+.timeline span:hover {
+    color: #ffe4e4;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.circle-button {
+    background-color: #8b70cc;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: ;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.circle-button:hover {
+    background-color: #7058a5;
+}
+
+.arrow {
+    font-size: 28px;
+}

@@ -1,0 +1,124 @@
+/* html, body {
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+} */
+
+* {
+    margin: 0; /* Mengatur semua elemen agar tidak memiliki margin default */
+    padding: 0; /* Mengatur semua elemen agar tidak memiliki padding default */
+    box-sizing: border-box; /* Menggunakan box-sizing untuk menghindari masalah dengan padding dan width */
+}
+
+body{
+    background-image: linear-gradient(#ff97d7,#7f59ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+nav{
+    background-color: #fe4baa57;
+    border: solid;
+    border-color: white;
+ 
+    border-radius: 100px;
+    margin: auto;
+    padding: 10px 20px;
+    max-width: 1000px;   
+}
+
+a{
+    
+    font-family: cursive;
+}
+
+p,h1,h2,h3 {
+    color: white;
+    font-family: cursive;
+
+}
+p:hover{
+    color: #04010b;
+    background-color: #ff97d7;
+    border-radius: 10px;
+}
+
+.paraf p:hover{
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+.conteiner {
+    width: 400px;
+    height: 400px;
+    background-color: #ffe4e4;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+
+@keyframes slideInYNav{
+    0%{
+        opacity: 0%;
+        transform: translateY(-100);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(100);
+    }
+
+}
+.slideInY{
+    animation:slideInYNav 1.5s ease-out forwards;
+}
+
+/* @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 18px; 
+    }
+
+    p {
+        font-size: 12px; 
+    }
+
+    .content-image {
+        max-width: 100%; 
+    }
+} */
+/* 
+.photo:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s; */
+    /* Stop scroll animation on hover */
+/* } */
+
+/* .photo {
+    animation: photoScroll 20s;
+}
+
+@keyframes photoScroll {
+    0% {
+        transform: translateX(5000%);
+    }
+    100% {
+        transform: translateX(-5000%);
+    }
+} */
+
+

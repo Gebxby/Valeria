@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hallo Valeria</title>
+    <link rel="stylesheet" href="image/indexcss.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="background-slideshow"></div>
+    <div>
+        <nav class="nav">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <h1 class="text-2xl font-bold text-center text-white">
+                            <a href="aboutThisWeb.html" class="text-2xl font-bold text-center text-white">Vale's Web</a>
+                        </h1>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="coming_soon.html" class="text-white px-4 py-2 rounded-full hover:bg-pink-400 transition duration-300">COMING SOON...</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden text-white text-center">
+                <a href="coming_soon.html" class="block px-4 py-2 rounded-full hover:bg-pink-400 transition duration-300">COMING SOON...</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main-container">
+        <section class="contents">
+            <div class="container p-5 max-w-2xl mx-auto border-2 border-white rounded-xl">
+                <div class="paraf">
+                    <div id ="content0">
+						<h1 class="text-white transition duration-300 hover:bg-pink-400 hover:scale-105">halo sayangkuu 💕</h1>
+					<div id ="content1"> <p>pencet ini</p></div>
+
+					<div id ="content5" class="" >
+						<p>mari kita melangkah Bersama menuju 1 tahun</p> 
+							
+					</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <audio controls>
+        <source src="music/Ikimonogakari - BAKU.flac" type="audio/FLAC">
+    </audio>
+
+    <script>
+        const messages = [
+            `apa kabarnya? ini adalah website yang aku buat untuk kamu...
+			ini yang aku sebut proyek pribadi, HAHAHA, makanya aku ga mau kamu tau
+			website ini akan terus aku update, 3 bulan lebih,1 tahun, 2 tahun, dan seterusnya.
+			website ini khusus buat kamu, dan semua foto foto kita, foto kamu maupun aku, kenangannya akan aku taruh disini.`,
+            `aku sudah punya mama sebagai Wanita yang sudah membesarkan aku,
+			dan mengajarkan aku untuk menjadi seorang pria yang mengerti Wanita.
+			adik perempuan, yang buat aku berlajar bagaimana caranya memeperlakukan Wanita.
+			dan kini kamu hadir, mengajarkan aku arti cinta sesungguhnya, mengajarkan
+			aku untuk menerimamu apa adanya, mengajarkan aku untuk senantiasa tersenyum
+			dan berterimakasih pada Tuhan karena telah menciptakan manusia se-indah mu`,
+            `sselama 3 bulan lebih ini, aku selalu berdoa untuk hubungan ini, untuk kamu ,dan untuk aku.
+			aku bersyukur punya dan menjalin hubungan ini, hubungan yang buat aku selalu tersenyum saat senja,
+			saat malam,saat subuh, dan saat fajar. darimu aku merasakan kesungguhan alam hubungan ini, yang dikirim Tuhan
+			untuk menjaga hatiku, menjaga cinta dan memupuknya.`,
+            `banyak masalah juga yang sudah kita lalui, mulai dari awal hingga mungkin nanti, aku mau tetap seperti itu, menyelesaikan
+			masalah dengan komunikasi baik baik. sekali lagi, makasih sudah hadir, sudah mau membuka pintu buat aku masuk, sudah berani untuk
+			membuka pintu hatiku.`,
+            `mari kita melangkah bersama menuju 1 tahun.`,
+			'<a href="http://ristek.link/linkapenih">i love you lim x --> 0</a>',
+        ];
+
+        let currentMessageIndex = 0;
+
+        const contentElement = document.getElementById('content1');
+        const textElement = contentElement.querySelector('p');
+
+        document.body.addEventListener('click', () => {
+            contentElement.classList.remove('fade-in');
+            contentElement.classList.add('fade-out');
+
+            setTimeout(() => {
+                currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+                textElement.textContent = messages[currentMessageIndex];
+                contentElement.classList.remove('fade-out');
+                contentElement.classList.add('fade-in');
+            }, 500); // Waktu fade out (500ms)
+        });
+    </script>
+</body>
+</html>

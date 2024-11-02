@@ -1,0 +1,131 @@
+*{
+	
+	margin: fixed;
+	padding: 1;
+	box-sizing: border-box;
+}
+
+
+body{
+	background-image: linear-gradient(#ff97d7, #7f59ff);
+	background-repeat: no-repeat; /* Mencegah pengulangan background */
+    background-size: cover; /* Mengisi seluruh layar dengan gradient tanpa pengulangan */
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+h1{
+	font-family: cursive;
+	font-size: 12px;
+}
+
+div px{
+
+	font-family: cursive;
+	font-size: 16px;
+  	margin-bottom: 10px
+
+}
+
+nav{
+
+	background-color: #7469b6;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+	border: 0,5px solid;
+	overflow: auto;
+	border-radius: 50px;
+	
+}
+
+nav ul{
+	
+	list-style-type: none;
+	text-align-last:center ;
+	display: flex;
+	justify-content: flex-start;
+	
+}
+nav li{
+	margin-right: 100px
+
+}
+nav ul li a{
+	text-decoration:none;
+    color: white;
+    font-family: cursive;
+    font: bolder;
+    font-size:13px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Warna saat hover */
+
+}
+.conteiner p:hover{
+	color: #7154fd;
+
+}
+.conteiner a:hover{
+	color: #ffcc00;
+}
+
+.hidden-element {
+	border: 2.5px solid;
+  	background-color: #e1afd1;
+  	visibility: hidden;
+  	
+}
+/*.conteiner {
+	border: 2.5px solid;
+	border-color: black;
+	background-color:#e1afd1;
+	padding: 20px;
+	max-width: 800px;
+	border-radius: 20px;
+}
+
+
+
+/
+
+
+/* Mengatur font-family untuk semua paragraf di dalam elemen dengan ID content */
+p {
+    font-family: cursive;
+    font-size: 12px; /* Ukuran font */
+    line-height: 1.5; /* Spasi antar baris */
+    color: #ffffff; /* Warna teks */
+
+   
+}
+
+.content-image {
+   
+    animation: scroll-right 5s linear infinite;
+	height: auto;
+}
+
+
+/* @keyframes scroll-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
+
+/* Responsif untuk perangkat mobile */
+/* @media (max-width: 768px) {
+	.img-responsive {
+		width: 100%; 
+		height: auto;
+	}
+} */
+
+
+perbaiki kode css ini sebagai seorang profesional

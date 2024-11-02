@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles4.css">
+    <script src="static/js/srcipts.js"></script>
+    <script src="https://cdn.tailwindcss.com">
+	</script>
+</head>
+<style>
+    /* Animasi fade-in dan slide ke atas */
+    @keyframes slideInX {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px); /* Mulai dari bawah */
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(10); /* Berakhir di posisi semula */
+        }
+    }
+
+    /* Menyertakan animasi ke dalam Tailwind */
+    .animate-slideInX {
+        animation: slideInX 1.5s ease-out forwards;
+    }
+</style>
+
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.5)), url('static/image/background.jpg'); background-size: cover; background-position: center;">
+    <div class="bg-stone-400 bg-opacity-50 w-[400px] h-[400px] flex justify-center items-center h-screen animate-slideInX ">
+        <div class="text-lg font-semibold text-white m-5">
+            <h4>About This Website</h4>
+            <!-- <p> ini adalah website khusus buat Vale, nonaku.</p>
+            <p> hanya ini yang bisa aku bisa buat nonaku; belum seperti yang lain, yang memberikan barang harga mahal, </p>
+            <p> aku memilih jalan untuk menyatakan sayangku pada nonaku, dengan membuat ini.
+            </p> -->
+
+            <p>sebenarnya apa itu website Hallo Vale?
+                website Hallo Vale adalah sebuah project pribadi, dan dediikasi serta pembuktian pada 
+                seorang gadis cantik,menawan bagaikan langit malam, Valeria nonaku yang aku sayangi.
+
+                website ini menjadi projek pribadi yang sangat menyenangkan, bekerja untuk membuktikan pada seseorang
+                bahwa beginilah dedikasi cintaku padanya, website ini akan terus di kembangkan setiap kali hubungan kami 
+                mencapai/merayakan hubungan yang sudah berjalan dalam kesekian bulan/tahun.
+                beberapa fitur juga akan di tambahkan kedepannya untuk mendambahkan variasi yang menarik untuk website ini
+            </p>
+            <br><br>
+            <a href="Valeria.html" class="text-decoration-none hover:text-sky-300">🏠kembali ke halaman utama</a>
+        </div>
+    </div>
+</body>
+</html>

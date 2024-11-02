@@ -1,0 +1,105 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    margin: 0; /* Mengatur semua elemen agar tidak memiliki margin default */
+    padding: 0; /* Mengatur semua elemen agar tidak memiliki padding default */
+    box-sizing: border-box; /* Menggunakan box-sizing untuk menghindari masalah dengan padding dan width */
+}
+
+body {
+    background-image: linear-gradient(#ff97d7, #7f59ff); /* Gradien background dari pink ke ungu */
+    background-repeat: no-repeat; /* Mencegah pengulangan background */
+    background-size: cover; /* Mengisi seluruh layar dengan gradient tanpa pengulangan */
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+    font-family: cursive; /* Atur font default untuk body */
+}
+
+h1 {
+    font-family: cursive; /* Atur font menjadi cursive */
+    font-size: 24px; /* Perbesar ukuran font */
+    text-align: center; /* Pusatkan teks */
+    margin-bottom: 20px; /* Beri jarak bawah */
+}
+
+div.px {
+    font-family: cursive;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #7469b6;
+    margin: 0 auto; /* Membuat navigasi berada di tengah */
+    padding: 10px 20px; /* Padding yang lebih fleksibel */
+    border: 1px solid #ffffff; /* Mengatur border */
+    border-radius: 50px; /* Membuat border melengkung */
+    max-width: 1200px; /* Membatasi lebar maksimal */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center; /* Teks di dalam ul akan disejajarkan di tengah */
+    display: flex;
+    justify-content: center; /* Posisi item ditengah */
+    gap: 50px; /* Menggunakan gap untuk mengatur jarak antar item */
+}
+
+nav li {
+    margin-right: 0; /* Menghapus margin kanan karena menggunakan gap */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Tambahkan transisi pada hover */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Warna saat hover */
+}
+
+.container p:hover {
+    color: #7154fd; /* Ubah warna saat hover */
+}
+
+.container a:hover {
+    color: #ffcc00;
+}
+
+.hidden-element {
+    border: 2.5px solid #ffffff;
+    background-color: #e1afd1;
+    visibility: hidden;
+}
+
+p {
+    font-family: cursive;
+    font-size: 14px; /* Ukuran font sedikit diperbesar */
+    line-height: 1.8; /* Spasi antar baris lebih nyaman untuk dibaca */
+    color: #ffffff;
+}
+
+.photo {
+    animation: photoScroll 20s linear infinite; /* Waktu animasi disesuaikan dengan banyaknya gambar */
+}
+
+.photo:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    animation-play-state: paused; /* Berhenti saat di-hover */
+}
+
+@keyframes photoScroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
